@@ -28,6 +28,13 @@
   "jest": {
     "testEnvironment": "node"
   },
+  "dependencies": {
+    "execa": "1.0.0",
+    "fs-extra": "7.0.1",
+    "request": "2.88.0",
+    "request-promise-native": "1.0.5",
+    "tar": "4.4.8"
+  },
   "devDependencies": {
     "@babel/cli": "7.2.3",
     "@babel/core": "7.2.2",

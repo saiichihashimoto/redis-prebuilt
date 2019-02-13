@@ -6,6 +6,7 @@
 .vscode/
 Thumbs.db
 coverage
+dump.rdb
 lib
 node_modules/
 yarn.lock
