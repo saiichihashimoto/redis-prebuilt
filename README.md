@@ -37,8 +37,8 @@ REDIS_VERSION
 For Example:
 
 ```bash
-export REDIS_DOWNLOADDIR='./' REDIS_VERSION=3.4.10
-mongod --port 27018 --dbpath ./mongodb --logpath /dev/stdout
+export REDIS_DOWNLOADDIR='./' REDIS_VERSION=5.0.3
+redis --port 400
 ```
 
 # Inspiration
