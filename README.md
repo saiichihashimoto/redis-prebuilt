@@ -24,3 +24,23 @@ redis-check-rdb
 redis-cli
 redis-sentinel
 ```
+
+# Usage
+
+The latest version of Redis and ~/.redis-prebuilt are the defaults. You can set a desired version and download folder through environment variables:
+
+```bash
+REDIS_DOWNLOADDIR
+REDIS_VERSION
+```
+
+For Example:
+
+```bash
+export REDIS_DOWNLOADDIR='./' REDIS_VERSION=3.4.10
+mongod --port 27018 --dbpath ./mongodb --logpath /dev/stdout
+```
+
+# Inspiration
+
+This is a Redis version of https://github.com/winfinit/mongodb-prebuilt
