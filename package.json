@@ -13,6 +13,14 @@
   "files": [
     "lib"
   ],
+  "bin": {
+    "redis-benchmark": "./lib/redis-benchmark.js",
+    "redis-check-aof": "./lib/redis-check-aof.js",
+    "redis-check-rdb": "./lib/redis-check-rdb.js",
+    "redis-cli": "./lib/redis-cli.js",
+    "redis-sentinel": "./lib/redis-sentinel.js",
+    "redis-server": "./lib/redis-server.js"
+  },
   "scripts": {
     "build": "babel src --out-dir lib --source-maps --delete-dir-on-start --verbose --ignore \"**/*.spec.js\"",
     "test": "jest --verbose $(if [ -z \"$CI\" ]; then echo --watch; else echo --color --coverage; fi)"
@@ -29,10 +37,11 @@
     "testEnvironment": "node"
   },
   "dependencies": {
+    "commander": "2.19.0",
     "execa": "1.0.0",
     "fs-extra": "7.0.1",
     "request": "2.88.0",
-    "request-promise-native": "1.0.5",
+    "request-promise-native": "1.0.7",
     "tar": "4.4.8"
   },
   "devDependencies": {
