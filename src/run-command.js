@@ -5,15 +5,15 @@ import redisDownload from './redis-download';
 export default async function runCommand(command, args) {
 	const {
 		env: {
-			REDIS_DOWNLOADDIR: downloadsDirectory = `${homedir()}/.redis-prebuilt`,
+			REDIS_DOWNLOADDIR: downloadDir = `${homedir()}/.redis-prebuilt`,
 			REDIS_VERSION: version,
 		},
 	} = process;
 
 	const directory = await redisDownload({
-		downloadsDirectory,
+		downloadDir,
 		version,
 	});
 
-	return execa(`${directory}/${command}`, args, { stdio: [process.stdin, process.stdout, process.stdout] });
+	return execa(`${directory}/src/${command}`, args, { stdio: [process.stdin, process.stdout, process.stdout] });
 }

@@ -11,7 +11,7 @@ describe('run-command', () => {
 	beforeEach(() => {
 		execa.mockImplementation(() => Promise.resolve());
 		os.homedir.mockImplementation(() => '/a/home/dir');
-		redisDownload.mockImplementation(() => Promise.resolve('/a/home/dir/.redis-prebuilt/redis-x.y.z/src'));
+		redisDownload.mockImplementation(() => Promise.resolve('/a/home/dir/.redis-prebuilt/redis-x.y.z'));
 	});
 
 	afterEach(() => {
@@ -24,7 +24,7 @@ describe('run-command', () => {
 	it('downloads redis', async () => {
 		await runCommand('redis-command');
 
-		expect(redisDownload).toHaveBeenCalledWith({ downloadsDirectory: '/a/home/dir/.redis-prebuilt' });
+		expect(redisDownload).toHaveBeenCalledWith({ downloadDir: '/a/home/dir/.redis-prebuilt' });
 	});
 
 	it('executes the redis command', async () => {
