@@ -1,6 +1,7 @@
 {
   "name": "redis-prebuilt",
   "version": "0.0.0-development",
+  "description": "Install redis prebuilt binaries using npm.",
   "homepage": "https://saiichihashimoto.github.io/redis-prebuilt/",
   "bugs": {
     "url": "https://github.com/saiichihashimoto/redis-prebuilt/issues"
