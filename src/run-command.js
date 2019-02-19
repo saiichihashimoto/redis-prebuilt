@@ -1,6 +1,6 @@
 import execa from 'execa';
+import redisDownload from 'redis-download';
 import { homedir } from 'os';
-import redisDownload from './redis-download';
 
 export default async function runCommand(command, args) {
 	const {
@@ -15,5 +15,5 @@ export default async function runCommand(command, args) {
 		version,
 	});
 
-	return execa(`${directory}/src/${command}`, args, { stdio: [process.stdin, process.stdout, process.stdout] });
+	return execa(`${directory}/src/${command}`, args, { stdio: 'inherit' });
 }

@@ -1,11 +1,11 @@
 import execa from 'execa';
 import os from 'os';
-import redisDownload from './redis-download';
+import redisDownload from 'redis-download';
 import runCommand from './run-command';
 
-jest.mock('./redis-download');
 jest.mock('execa');
 jest.mock('os');
+jest.mock('redis-download');
 
 describe('run-command', () => {
 	beforeEach(() => {
@@ -30,6 +30,6 @@ describe('run-command', () => {
 	it('executes the redis command', async () => {
 		await runCommand('redis-command', ['args1', 'args2']);
 
-		expect(execa).toHaveBeenCalledWith('/a/home/dir/.redis-prebuilt/redis-x.y.z/src/redis-command', ['args1', 'args2'], expect.anything());
+		expect(execa).toHaveBeenCalledWith('/a/home/dir/.redis-prebuilt/redis-x.y.z/src/redis-command', ['args1', 'args2'], expect.anything({ stdio: 'inherit' }));
 	});
 });

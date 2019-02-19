@@ -43,4 +43,4 @@ redis --port 400
 
 # Inspiration
 
-This is a Redis version of https://github.com/winfinit/mongodb-prebuilt
+This is a Redis version of [https://github.com/winfinit/mongodb-prebuilt](https://github.com/winfinit/mongodb-prebuilt)

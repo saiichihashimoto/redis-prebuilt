@@ -24,7 +24,7 @@
   },
   "scripts": {
     "build": "babel src --out-dir lib --source-maps --delete-dir-on-start --verbose --ignore \"**/*.spec.js\"",
-    "test": "jest --verbose $(if [ -z \"$CI\" ]; then echo --watch; else echo --color --coverage; fi)"
+    "test": "jest --verbose $(if [ -z ${CI+x} ]; then echo --watch; else echo --color --coverage; fi)"
   },
   "config": {
     "commitizen": {
@@ -41,6 +41,7 @@
     "commander": "2.19.0",
     "execa": "1.0.0",
     "fs-extra": "7.0.1",
+    "redis-download": "1.0.1",
     "request": "2.88.0",
     "request-promise-native": "1.0.7",
     "tar": "4.4.8"
