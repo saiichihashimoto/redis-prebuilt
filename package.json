@@ -38,7 +38,7 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "commander": "2.19.0",
+    "commander": "2.20.0",
     "execa": "1.0.0",
     "fs-extra": "7.0.1",
     "redis-download": "1.0.2",
