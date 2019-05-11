@@ -40,7 +40,7 @@
   "dependencies": {
     "commander": "2.20.0",
     "execa": "1.0.0",
-    "fs-extra": "7.0.1",
+    "fs-extra": "8.0.0",
     "redis-download": "1.0.3",
     "request": "2.88.0",
     "request-promise-native": "1.0.7",
