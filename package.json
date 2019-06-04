@@ -44,7 +44,7 @@
     "redis-download": "1.0.5",
     "request": "2.88.0",
     "request-promise-native": "1.0.7",
-    "tar": "4.4.9"
+    "tar": "4.4.10"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",
