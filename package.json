@@ -41,7 +41,7 @@
     "commander": "2.20.0",
     "execa": "1.0.0",
     "fs-extra": "8.0.1",
-    "redis-download": "1.0.5",
+    "redis-download": "1.0.6",
     "request": "2.88.0",
     "request-promise-native": "1.0.7",
     "tar": "4.4.10"
@@ -51,9 +51,9 @@
     "@babel/core": "7.4.5",
     "@babel/preset-env": "7.4.5",
     "cz-conventional-changelog": "2.1.0",
-    "eslint-config-saiichihashimoto": "1.2.23",
+    "eslint-config-saiichihashimoto": "1.2.24",
     "husky": "2.4.1",
     "jest": "24.1.0",
-    "lint-my-app": "3.3.28"
+    "lint-my-app": "3.3.29"
   }
 }
