@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "commander": "2.20.0",
-    "execa": "2.0.0",
+    "execa": "2.0.1",
     "fs-extra": "8.0.1",
     "redis-download": "1.0.6",
     "request": "2.88.0",
