@@ -49,6 +49,6 @@
     "eslint-config-saiichihashimoto": "1.2.35",
     "husky": "2.7.0",
     "jest": "24.1.0",
-    "lint-my-app": "3.3.33"
+    "lint-my-app": "3.3.34"
   }
 }
