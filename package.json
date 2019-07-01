@@ -38,7 +38,7 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "execa": "2.0.1",
+    "execa": "2.0.2",
     "redis-download": "1.0.9"
   },
   "devDependencies": {
