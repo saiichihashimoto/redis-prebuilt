@@ -1,7 +1,5 @@
 language: node_js
 cache: npm
-node_js:
-  - 11
 branches:
   only:
     - master
@@ -15,8 +13,12 @@ after_success:
   - cat ./coverage/lcov.info | npx coveralls
 jobs:
   include:
+    - stage: test
+      if: type = pull_request
     - stage: release
-      node_js: lts/*
+      if: type = push
+      script: skip
+      after_success: true
       deploy:
         provider: script
         skip_cleanup: true
