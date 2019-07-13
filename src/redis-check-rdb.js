@@ -1,5 +1,10 @@
 #!/usr/bin/env node
+import updateNotifier from 'update-notifier';
+
+import pkg from '../package';
 import runCommand from './run-command';
+
+updateNotifier({ pkg }).notify();
 
 runCommand('redis-check-rdb', process.argv.slice(2))
 	.catch((err) => { // eslint-disable-line promise/prefer-await-to-callbacks
