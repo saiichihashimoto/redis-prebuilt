@@ -2,6 +2,7 @@
 import updateNotifier from 'update-notifier';
 
 import pkg from '../package';
+
 import runCommand from './run-command';
 
 updateNotifier({ pkg }).notify();

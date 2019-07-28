@@ -1,6 +1,7 @@
+import { homedir } from 'os';
+
 import execa from 'execa';
 import redisDownload from 'redis-download';
-import { homedir } from 'os';
 
 export default async function runCommand(command, args) {
 	const {

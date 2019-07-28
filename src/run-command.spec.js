@@ -1,6 +1,8 @@
-import execa from 'execa';
 import os from 'os';
+
+import execa from 'execa';
 import redisDownload from 'redis-download';
+
 import runCommand from './run-command';
 
 jest.mock('execa');
