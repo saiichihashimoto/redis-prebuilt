@@ -9,7 +9,7 @@ notifications:
       - saiichihashimoto@gmail.com
     on_success: never
     on_failure: always
-after_success:
+after_script:
   - cat ./coverage/lcov.info | npx coveralls
 jobs:
   include:
@@ -18,7 +18,7 @@ jobs:
     - stage: release
       if: type = push
       script: skip
-      after_success: true
+      after_script: true
       deploy:
         provider: script
         skip_cleanup: true
