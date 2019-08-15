@@ -17,8 +17,6 @@ jobs:
       if: type = pull_request
     - stage: release
       if: type = push
-      script: skip
-      after_script: true
       deploy:
         provider: script
         skip_cleanup: true
