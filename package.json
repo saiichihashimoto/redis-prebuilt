@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "execa": "2.0.5",
-    "redis-download": "1.0.16",
+    "redis-download": "1.0.21",
     "update-notifier": "3.0.1"
   },
   "devDependencies": {
