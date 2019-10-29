@@ -9,6 +9,7 @@ notifications:
       - saiichihashimoto@gmail.com
     on_success: never
     on_failure: always
+script: npm test && npm run build && npx lint-my-app lint
 after_script:
   - cat ./coverage/lcov.info | npx coveralls
 jobs:
