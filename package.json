@@ -50,7 +50,7 @@
     "eslint-config-saiichihashimoto": "2.0.53",
     "husky": "3.0.9",
     "jest": "24.1.0",
-    "lint-my-app": "3.7.27"
+    "lint-my-app": "3.7.28"
   },
   "engines": {
     "node": "12.8.0"
