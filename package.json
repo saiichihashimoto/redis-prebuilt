@@ -40,7 +40,7 @@
   "dependencies": {
     "execa": "3.4.0",
     "redis-download": "1.0.26",
-    "update-notifier": "3.0.1"
+    "update-notifier": "4.0.0"
   },
   "devDependencies": {
     "@babel/cli": "7.7.5",
