@@ -38,7 +38,7 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "execa": "4.0.0",
+    "execa": "4.0.1",
     "redis-download": "1.0.33",
     "update-notifier": "4.1.0"
   },
