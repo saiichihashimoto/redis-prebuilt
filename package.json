@@ -24,7 +24,9 @@
   },
   "scripts": {
     "build": "babel src --out-dir lib --source-maps --delete-dir-on-start --verbose --ignore \"**/*.spec.js\"",
-    "test": "jest --verbose $(if [ -z ${CI+x} ]; then echo --watch; else echo --color --coverage; fi)"
+    "test": "jest --verbose $(if [ -z ${CI+x} ]; then echo --watch; else echo --color --coverage; fi)",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "config": {
     "commitizen": {
@@ -40,7 +42,8 @@
   "dependencies": {
     "execa": "4.0.1",
     "redis-download": "1.0.33",
-    "update-notifier": "4.1.0"
+    "update-notifier": "4.1.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/cli": "7.8.4",
@@ -54,5 +57,6 @@
   },
   "engines": {
     "node": "12.8.0"
-  }
+  },
+  "snyk": true
 }
