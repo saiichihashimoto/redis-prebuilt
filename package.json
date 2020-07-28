@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "execa": "4.0.3",
-    "redis-download": "1.0.33",
+    "redis-download": "1.0.35",
     "update-notifier": "4.1.0",
     "snyk": "^1.316.1"
   },
